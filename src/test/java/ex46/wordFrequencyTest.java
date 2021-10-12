@@ -18,6 +18,7 @@ class wordFrequencyTest {
         test_array.add(2);
         test_array.add(8);
         test_array.add(2);
+        test_array.add(8);
         // Check if the function finds the correct earliest instance of the smallest number
         assertEquals(4, test.findBiggestNumber(test_array));
     }

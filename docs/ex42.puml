@@ -2,8 +2,8 @@
 'https://plantuml.com/class-diagram
 
 class parsingData {
-- File inputFile
-- ArrayList <String> namesList
+File inputFile
+ArrayList <String> namesList
 + readFileInformation()
 + printNamesList()
 + main()

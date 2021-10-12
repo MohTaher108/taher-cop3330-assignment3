@@ -7,9 +7,16 @@ import java.nio.file.Paths;
 import java.util.*;
 
 public class websiteGenerator {
+    // Creates HTML file and fills it in
     public static void createHTMLFile(String path, String author, String siteName) throws Exception {
+        /*  Create HTML class
+            Print everything needed to it
+         */
+
+        // Create HTML class
         HTMLStrings HTMLFileContents = new HTMLStrings();
 
+        // Print everything to html file
         PrintStream htmlFile = new PrintStream(path + "\\index.html");
         PrintStream console = System.out;
         System.setOut(htmlFile);
@@ -20,14 +27,22 @@ public class websiteGenerator {
         System.out.println("Created ./website/" + siteName + "/index.html");
     }
 
+    // This function makes a java folder if the user wants it
     public static void createJavaFile(char javaConfirm, String path, String siteName) throws Exception {
+        //  if(javaConfirm == yes) create file directory
+
+        // Check if a java folder is wanted, if so then make one
         if(javaConfirm == 'y' || javaConfirm == 'Y') {
             Files.createDirectories(Paths.get(path + "\\js\\"));
             System.out.println("Created ./website/" + siteName + "/js/");
         }
     }
 
+    // This function makes a css folder if the user wants it
     public static void createCSSFile(char CSSConfirm, String path, String siteName) throws Exception {
+        //  if(CSSConfirm == yes) create file directory
+
+        // Check if a css folder is wanted, if so then make one
         if(CSSConfirm == 'y' || CSSConfirm == 'Y') {
             Files.createDirectories(Paths.get(path + "\\css\\"));
             System.out.println("Created ./website/" + siteName + "/css/");

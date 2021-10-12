@@ -43,8 +43,7 @@ public class parsingData {
         for(String[] temp_array: namesList) {
             for(String temp: temp_array) {
                 // Format the print by using a string
-                String formattingString = String.format("%-10s", temp);
-                System.out.print(formattingString);
+                System.out.format("%-10s", temp);
             }
             // New line for the next person
             System.out.println();
