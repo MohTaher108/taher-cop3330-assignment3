@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class wordFrequency {
+- File inputFile
+- ArrayList<String> words
+- ArrayList<Integer> wordsCount
++ frequencyArray()
++ findBiggestNumber()
++ printWordsAndCountInOrder()
++ main()
+}
+
+@enduml

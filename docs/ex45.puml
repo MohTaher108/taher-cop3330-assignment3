@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class wordFinder {
+- File inputFile
+- File outputFile
+- String outputFileName
++ replaceAllUtilizeAndPrintToOutput()
++ main()
+}
+
+@enduml

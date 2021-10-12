@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class nameSorting {
+File inputFile
+ArrayList<String> namesList
+File output
++ readFileInformation()
++ sortNamesList()
++ printNamesList()
++ main()
+}
+
+@enduml
